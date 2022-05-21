@@ -1,1 +1,1 @@
-Simple Search service implemented from scratch in .NET 6. 
+**Simple Search service implemented from scratch in .NET 6. 
