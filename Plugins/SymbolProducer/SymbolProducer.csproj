@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\SearchService.App\SearchService.App.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="Models\"/>
+        <None Remove="Infrastructure\"/>
+        <None Remove="Abstractions\"/>
+        <None Remove="MongoDB.Driver"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Models\"/>
+        <Folder Include="Infrastructure\"/>
+        <Folder Include="Abstractions\"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="MongoDB.Driver" Version="2.15.0"/>
+    </ItemGroup>
+</Project>

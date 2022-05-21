@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="Mapster" />
+        <None Remove="Microsoft.Extensions.Caching.StackExchangeRedis" />
+        <None Remove="MongoDB.Driver" />
+        <None Remove="Repositories\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Mapster" Version="7.3.0" />
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.4" />
+        <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Repositories\" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\SearchService.App\SearchService.App.csproj" />
+    </ItemGroup>
+</Project>
